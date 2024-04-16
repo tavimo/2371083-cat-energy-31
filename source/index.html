@@ -11,60 +11,74 @@
 
 <body class="page__body">
   <header class="main-header">
-    <a class="main-header__logo" href="#" aria-current="page">
-      <img src="#" width="50" height="50" alt="логотип Cat Energy">
-    </a>
-    <a class="main-header__logo" href="#" aria-current="page">
-      <img src="#" width="50" height="50" alt="текстовый логотип Cat Energy">
-    </a>
-    <nav class="main-header__main-nav main-nav">
-      <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню навигации</span></button>
-      <div class="main-nav__container">
-        <ul class="main-nav__list site-list">
-          <li class="site-list__item">
-            <a href="#">Главная</a>
-          </li>
-          <li class="site-list__item">
-            <a href="catalog.html">Каталог продукции</a>
-          </li>
-          <li class="site-list__item">
-            <a href="#">Подбор программы</a>
-          </li>
-        </ul>
-      </div>
-    </nav>
+    <div class="main-header__container container">
+      <a class="main-header__logo" href="#" aria-current="page">
+        <img src="#" width="50" height="50" alt="логотип Cat Energy">
+      </a>
+      <a class="main-header__logo" href="#" aria-current="page">
+        <img src="#" width="50" height="50" alt="текстовый логотип Cat Energy">
+      </a>
+      <nav class="main-header__main-nav main-nav">
+        <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню навигации</span></button>
+        <div class="main-nav__container">
+          <ul class="main-nav__list site-list">
+            <li class="site-list__item">
+              <a href="#">Главная</a>
+            </li>
+            <li class="site-list__item">
+              <a href="catalog.html">Каталог продукции</a>
+            </li>
+            <li class="site-list__item">
+              <a href="#">Подбор программы</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
   </header>
 
   <main class="main-container">
 
-    <div class="hero"></div>
+    <section class="hero">
+      <div class="hero-container container">
+        <h2 class="hero__title">Функциональное питание для котов</h2>
+        <p class="hero__text">Занялся собой? Займись котом!</p>
+        <a class="button" href="#">Подобрать программу</a>
+        <img src="#" width="50" height="50" alt="Банка Cat Energy со вкусом курицы">
+      </div>
+    </section>
 
     <section class="programs">
-      <div class="programs__container">
+      <h2 class="visually-hidden">Программы питания</h2>
+      <div class="container">
         <ul class="programs__list">
-          <li class="programs__item programs__item--slim">
-            <h3 class="programs__title">Похудение</h3>
-            <p class="programs__description">
-              Ваш кот весит больше собаки и почти утратил способность лазить по
-              деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу
-              сбросить лишний вес.
-            </p>
-            <a class="programs__link" href="#">Каталог Slim</a>
+          <li class="programs__item">
+            <article class="programs-card programs-card--slim">
+              <h3 class="programs-card__title">Похудение</h3>
+              <p class="programs-card__description">
+                Ваш кот весит больше собаки и почти утратил способность лазить по
+                деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу
+                сбросить лишний вес.
+              </p>
+              <a class="programs-card__link" href="#">Каталог Slim</a>
+            </article>
           </li>
-          <li class="programs__item programs__item--pro">
-            <h3 class="programs__title">Набор массы</h3>
-            <p class="programs__description">
-              Заработать авторитет среди дворовых котов и даже собак? Серия Cat
-              Energy Pro поможет вашему коту нарастить необходимые мышцы!
-            </p>
-            <a class="programs__link" href="#">Каталог Pro</a>
+          <li class="programs__item">
+            <article class="programs-card programs-card--pro">
+              <h3 class="programs-card__title">Набор массы</h3>
+              <p class="programs-card__description">
+                Заработать авторитет среди дворовых котов и даже собак? Серия Cat
+                Energy Pro поможет вашему коту нарастить необходимые мышцы!
+              </p>
+              <a class="programs-card__link" href="#">Каталог Pro</a>
+            </article>
           </li>
         </ul>
       </div>
     </section>
 
     <section class="advantages">
-      <div class="advantages__container">
+      <div class="advantages__container container">
         <h2 class="advantages__title">Как это работает</h2>
         <ul class="advantages__list">
           <li class="advantages__item advantages__item--leaf">
@@ -96,7 +110,7 @@
     </section>
 
     <section class="example">
-      <div class="example__container">
+      <div class="example__container container">
         <h2 class="example__title">Живой пример</h2>
         <p class="example__description">
           Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на
@@ -126,7 +140,7 @@
     </section>
 
     <section class="map">
-      <div class="map__container">
+      <div class="map__container container">
         <div class="map__description-container">
           <h2 class="visually-hidden">Местонахождение на карте</h2>
           <p class="map__description">Приглашаем к сотрудничеству дилеров!</p>
@@ -140,7 +154,7 @@
   </main>
 
   <footer class="footer">
-    <div class="footer__container">
+    <div class="footer__container container">
       <a class="footer__logo" href="#" aria-current="page">
         <img src="#" width="50" height="50" alt=" текстовый логотип Cat Energy">
       </a>
