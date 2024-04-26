@@ -22,7 +22,11 @@
 }
 
 .sub-catalog__bonus {
-
+  background-color: $accent-color;
+  background-image: url("../../images/bonus-mobile@1x.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 290px;
 }
 
 .sub-catalog__bonus-description {
