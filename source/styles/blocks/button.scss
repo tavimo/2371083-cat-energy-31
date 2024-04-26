@@ -5,4 +5,15 @@
   line-height: 20px;
   text-transform: uppercase;
   color: $contrast-color-text;
+  display: inline-block;
+  border: none;
+  width: 100%;
+  padding: 10px 0;
+  background-color: $accent-color;
+  text-align: center;
+}
+
+.button--product-card {
+  background-color: $color-background;
+  color: $basic-color-text;
 }
