@@ -3,11 +3,17 @@
 }
 
 .catalog__title {
-
+  font-family: $title-font;
+  font-size: 36px;
+  line-height: 36px;
+  font-weight: 400;
+  color: $title-color-text;
 }
 
 .catalog__list {
-
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
 }
 
 .catalog__item {

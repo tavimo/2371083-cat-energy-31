@@ -7,11 +7,17 @@
 }
 
 .map__description {
-
+  font-family: $title-font;
+  font-size: 16px;
+  line-height: 20px;
+  color: $title-color-text;
+  text-transform: uppercase;
 }
 
 .map__address {
-
+  font-style: inherit;
+  font-size: 14px;
+  line-height: 20px;
 }
 
 .map__location {

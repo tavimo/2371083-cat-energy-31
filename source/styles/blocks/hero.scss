@@ -1,8 +1,12 @@
 .hero__title {
-
+  font-family: $title-font;
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 36px;
 }
 
 .hero__text {
-
+  font-family: $title-font;
+  text-transform: uppercase;
 }
 

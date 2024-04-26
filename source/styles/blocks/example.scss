@@ -1,5 +1,9 @@
 .example__title {
-
+  font-family: $title-font;
+  font-size: 36px;
+  line-height: 40px;
+  font-weight: 400;
+  color: $title-color-text;
 }
 
 .example__description {
@@ -7,7 +11,9 @@
 }
 
 .example__list {
-
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
 }
 
 .example__item {
@@ -15,15 +21,24 @@
 }
 
 .example__term {
-
+  font-size: 12px;
+  line-height: 12px;
 }
 
 .example__definition {
-
+  font-family: $title-font;
+  font-size: 24px;
+  line-height: 24px;
+  color: $title-color-text;
+  text-transform: uppercase;
 }
 
 .example__cost {
-
+  font-family: $title-font;
+  font-size: 14px;
+  line-height: 20px;
+  color: $title-color-text;
+  text-transform: uppercase;
 }
 
 .example__comparison {

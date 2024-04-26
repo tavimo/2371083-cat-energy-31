@@ -7,11 +7,16 @@
 }
 
 .product-card__title-link {
-
+  text-decoration: none;
 }
 
 .product-card__title {
-
+  font-family: $title-font;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: $card-title-color-text;
 }
 
 .product-card__properties {
