@@ -12,10 +12,6 @@
 }
 
 
-.slider__img--before {
-  background-color: $color-background;
-}
-
 .slider__img-wrapper {
   position: absolute;
   top: 0;
@@ -28,7 +24,6 @@
     height: 512px;
   }
 }
-
 
 .slider__change-wrapper {
   position: absolute;
