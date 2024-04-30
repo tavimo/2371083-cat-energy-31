@@ -1,3 +1,15 @@
+.programs {
+  margin-bottom: 20px;
+
+  @media (min-width: 768px) {
+    margin-bottom: 20px;
+  }
+
+  @media (min-width: 1300px) {
+    margin-bottom: 71px;
+  }
+}
+
 .programs__list {
   margin: 0;
   padding: 0;
