@@ -1,0 +1,22 @@
+
+.promotions__title {
+  font-family: $title-font;
+  font-size: 24px;
+  line-height: 24px;
+  color: $title-color-text;
+}
+
+.promotions__description {
+  font-family: $title-font;
+  font-size: 16px;
+  line-height: 24px;
+  color: $title-color-text;
+}
+
+
+.promotions__input::placeholder {
+  font-family: $title-font;
+  font-size: 20px;
+  line-height: auto;
+  color: $basic-color-text;
+}

@@ -1,0 +1,26 @@
+.programs-card {
+  background-color: $color-background;
+}
+
+
+.programs-card__title {
+  font-family: $title-font;
+  font-size: 24px;
+  line-height: 37px;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: $title-color-text;
+}
+
+.programs-card__description {
+  color: $basic-color-text;
+}
+
+.programs-card__link {
+  text-decoration: none;
+  font-family: $title-font;
+  font-size: 16px;
+  line-height: 16px;
+  color: $title-color-text;
+  text-transform: uppercase;
+}

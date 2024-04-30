@@ -1,0 +1,15 @@
+.footer {
+  background-color: $color-background;
+}
+
+
+.footer__copyright-link {
+  text-decoration: none;
+  color: $title-color-text;
+}
+
+.footer__copyright-name {
+  font-size: 16px;
+  line-height: 20px;
+  color: $basic-color-text;
+}

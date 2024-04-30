@@ -30,15 +30,15 @@
       <nav class="main-header__navigation navigation">
         <button class="navigation__toggle" type="button"><span class="visually-hidden">Открыть меню навигации</span></button>
         <div class="navigation__container">
-          <ul class="navigation__list site-list">
-            <li class="site-list__item">
-              <a href="catalog.html">Главная</a>
+          <ul class="navigation__list">
+            <li class="navigation__item">
+              <a class="navigation__link" href="index.html">Главная</a>
             </li>
-            <li class="site-list__item">
-              <a href="#">Каталог продукции</a>
+            <li class="navigation__item">
+              <a class="navigation__link" href="#">Каталог продукции</a>
             </li>
-            <li class="site-list__item">
-              <a href="#">Подбор программы</a>
+            <li class="navigation__item">
+              <a class="navigation__link" href="#">Подбор программы</a>
             </li>
           </ul>
         </div>
@@ -48,7 +48,7 @@
 
   <main class="main-container">
     <section class="catalog">
-      <div class="catalog__container container">
+      <div class="container">
         <h1 class="visually-hidden">
           Оформление заказа функционального питания Cat Energy
         </h1>
@@ -235,7 +235,7 @@
               <p class="product-card__description">
                 На самом деле вкусов гораздо больше!
               </p>
-              <a class="product-card__button button" href="#">Показать все</a>
+              <a class="product-card__button button button--light" href="#">Показать все</a>
             </article>
           </li>
         </ul>
@@ -243,7 +243,7 @@
     </section>
 
     <section class="sub-catalog">
-      <div class="sub-catalog__container container">
+      <div class="container">
         <h2 class="sub-catalog__title">Дополнительные товары</h2>
         <ul class="sub-catalog__list">
           <li class="sub-catalog__item sub-card">
@@ -280,7 +280,7 @@
     </section>
 
     <section class="promotions">
-      <div class="promotions__container container">
+      <div class="container">
         <h2 class="promotions__title">Акции и новинки</h2>
         <p class="promotions__description">Подпишитесь на наши новости и не пропустите ни одного предложения!</p>
         <form class="promotions__form" action="https://echo.htmlacademy.ru">
@@ -306,24 +306,25 @@
   </main>
 
   <footer class="footer">
-    <div class="footer__container container">
+    <div class="container">
       <a class="footer__logo" href="#" aria-current="page">
-        <img src="#" width="50" height="50" alt="текстовый логотип Cat Energy">
+        <img src="images/logo-text.svg" width="101" height="18" alt="текстовый логотип Cat Energy">
       </a>
       <div class="footer__social-wrapper">
-        <ul class="footer__social-list">
-          <li class="footer__social-item">
-            <a class="footer__social-link" href="https://vk.com/htmlacademy" target="_blank" rel="noreferrer noopener">
+        <h2 class="visually-hidden">Социальные сети</h2>
+        <ul class="footer__social-list social-list">
+          <li class="social-list__item">
+            <a class="social-list__link" href="https://vk.com/htmlacademy" target="_blank" rel="noreferrer noopener">
               <span class="visually-hidden">Мы во Вконтакте.</span>
             </a>
           </li>
-          <li class="footer__social-item">
-            <a class="footer__social-link" href="https://www.youtube.com/user/htmlacademyru" target="_blank" rel="noreferrer noopener">
+          <li class="social-list__item">
+            <a class="social-list__link" href="https://www.youtube.com/user/htmlacademyru" target="_blank" rel="noreferrer noopener">
               <span class="visually-hidden">Мы на Youtube.</span>
             </a>
           </li>
-          <li class="footer__social-item">
-            <a class="footer__social-link" href="tg://resolve?domain=htmlacademy" target="_blank" rel="noreferrer noopener">
+          <li class="social-list__item">
+            <a class="social-list__link" href="tg://resolve?domain=htmlacademy" target="_blank" rel="noreferrer noopener">
               <span class="visually-hidden">Мы в Telegram.</span>
             </a>
           </li>
@@ -331,7 +332,7 @@
       </div>
 
       <a class="footer__copyright-link" href="https://htmlacademy.ru" target="_blank" rel="noreferrer noopener">
-        <span class="footer__copyright-academy">HTML Academy:</span>
+        <span class="footer__copyright-name">HTML Academy:</span>
         <img src="images/logo-html.svg" width="27" height="34" alt="логотип HTML Academy">
       </a>
     </div>

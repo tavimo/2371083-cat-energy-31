@@ -1,0 +1,31 @@
+
+
+.sub-catalog__title {
+  font-family: $title-font;
+  font-size: 24px;
+  line-height: 24px;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: $title-color-text;
+}
+
+.sub-catalog__list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+
+.sub-catalog__bonus {
+  background-color: $accent-color;
+  background-image: url("../../images/bonus-mobile@1x.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 290px;
+}
+
+.sub-catalog__bonus-description {
+  font-size: 16px;
+  line-height: 20px;
+  color: $contrast-color-text;
+}
