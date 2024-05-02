@@ -52,19 +52,19 @@
 
 
 .advantages__item--leaf::before {
-  @include advantages__item (url("../../icons/advantages__item--leaf.svg"));
+  @include advantages__item (url("../../icons/stack.svg#advantages__item--leaf"));
 }
 
 .advantages__item--water::before {
-  @include advantages__item (url("../../icons/advantages__item--water.svg"));
+  @include advantages__item (url("../../icons/stack.svg#advantages__item--water"));
 }
 
 .advantages__item--food::before {
-  @include advantages__item (url("../../icons/advantages__item--food.svg"));
+  @include advantages__item (url("../../icons/stack.svg#advantages__item--food"));
 }
 
 .advantages__item--watch::before {
-  @include advantages__item (url("../../icons/advantages__item--watch.svg"));
+  @include advantages__item (url("../../icons/stack.svg#advantages__item--watch"));
 }
 
 .advantages__description {
