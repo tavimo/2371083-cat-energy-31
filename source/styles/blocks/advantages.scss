@@ -1,3 +1,7 @@
+.advantages {
+  margin-bottom: 49px;
+}
+
 .advantages__title {
   font-family: $title-font;
   font-size: 36px;
@@ -6,36 +10,61 @@
   color: $title-color-text;
   margin: 0;
   margin-bottom: 40px;
+
+
+  @media (min-width: 768px) {
+    margin-bottom: 32px;
+  }
 }
 
 .advantages__list {
   padding: 0;
   margin: 0;
   list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+
+  @media (min-width: 768px) {
+    display: grid;
+    grid-template-columns: repeat(2, 250px);
+    gap: 37px 135px;
+    padding-right: 73px;
+  }
+
+  @media (min-width: 1300px) {
+    display: grid;
+    grid-template-columns: repeat(4, 250px);
+    gap: 73px;
+    padding-right: 0;
+  }
 }
 
 .advantages__item {
   position: relative;
-  padding-left: 100px;
-}
-
-.advantages__item::before {
-  content: "";
-  display: block;
-  width: 60px;
-  height: 60px;
-  background-color: $accent-color;
-  position: absolute;
-  left: 0;
+  padding-left: 80px;
 
   @media (min-width: 768px) {
-    width: 80px;
-    height: 80px;
+    min-height: 280px;
+    padding: 151px 26px 26px 0;
   }
+}
 
-  @media (min-width: 1300px) {
 
-  }
+.advantages__item--leaf::before {
+  @include advantages__item (url("../../icons/advantages__item--leaf.svg"));
+}
+
+.advantages__item--water::before {
+  @include advantages__item (url("../../icons/advantages__item--water.svg"));
+}
+
+.advantages__item--food::before {
+  @include advantages__item (url("../../icons/advantages__item--food.svg"));
+}
+
+.advantages__item--watch::before {
+  @include advantages__item (url("../../icons/advantages__item--watch.svg"));
 }
 
 .advantages__description {

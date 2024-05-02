@@ -7,3 +7,24 @@
     font-display: swap;
   }
 }
+
+/* Декоративный элемент с фоном и изобращением перед пунктами списка advantages */
+@mixin advantages__item ($advantages-background-url) {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 60px;
+  background-color: $accent-color;
+  background-repeat: no-repeat;
+  background-image: $advantages-background-url;
+  background-position: 50%;
+  background-size: 28px;
+  position: absolute;
+  left: 0;
+
+  @media (min-width: 768px) {
+    width: 80px;
+    height: 80px;
+    top: 40px;
+  }
+}
