@@ -38,6 +38,7 @@
 }
 
 .programs-card__description {
+  color: $basic-color-text;
   margin: 0;
   margin-bottom: 15px;
 
@@ -144,15 +145,50 @@
   }
 }
 
-.programs-card__description {
-  color: $basic-color-text;
-}
-
 .programs-card__link {
+  display: flex;
+  align-items: center;
   text-decoration: none;
   font-family: $title-font;
   font-size: 16px;
   line-height: 16px;
   color: $title-color-text;
   text-transform: uppercase;
+
+  &:hover .product-card__arrow::after {
+    transform: translate(8px);
+  }
+
+  &:active {
+    opacity: 0.5;
+  }
+
+  @media (min-width: 768px) {
+    font-size: 20px;
+    line-height: 20px;
+  }
+}
+
+
+.product-card__arrow {
+  overflow: hidden;
+  position: relative;
+  width: 32px;
+  height: 10px;
+  margin-left: 15px;
+
+  &::after {
+    content: "";
+    width: 32px;
+    height: 10px;
+    display: block;
+    background-image: url("../../icons/stack.svg#programs-arrow");
+    position: absolute;
+    left: -8px;
+    transition: transform 0.3s ease;
+  }
+
+  @media (min-width: 768px) {
+    margin-left: 25px;
+  }
 }
