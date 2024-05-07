@@ -46,23 +46,16 @@
   gap: 24px;
 }
 
-.social-list__item {
-  padding: 2px auto;
-  width: 28px;
-  height: 22px;
-  background-color: #666666;
+.social-list__link--vk {
+  @include social-list__link (url("../../icons/stack.svg#social-list-vk"));
+}
 
-  &--vk {
-    mask-image: url("../../icons/stack.svg#social-list-vk");
-  }
+.social-list__link--youtube {
+  @include social-list__link (url("../../icons/stack.svg#social-list-youtube"));
+}
 
-  &--youtube {
-    mask-image: url("../../icons/stack.svg#social-list-youtube");
-  }
-
-  &--telegram {
-    mask-image: url("../../icons/stack.svg#social-list-telegram");
-  }
+.social-list__link--telegram {
+  @include social-list__link (url("../../icons/stack.svg#social-list-telegram"));
 }
 
 .footer__copyright-image {

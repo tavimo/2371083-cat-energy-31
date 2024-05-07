@@ -28,3 +28,27 @@
     top: 40px;
   }
 }
+
+/*Иконки соц.сетей и их состояния*/
+@mixin social-list__link ($mask-image-url) {
+  &::before {
+    content: "";
+    display: block;
+    padding: 2px auto;
+    width: 28px;
+    height: 22px;
+    background-color: #666666;
+    mask-image: $mask-image-url;
+  }
+
+  &:hover::before,
+  &:focus::before {
+    background-color: $accent-color;
+  }
+
+
+  &:active::before {
+    background-color: $accent-color;
+    opacity: 0.5;
+  }
+}
