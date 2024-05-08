@@ -12,7 +12,6 @@
     padding: 77px 61px 59px 52px;
     width: 570px;
   }
-
 }
 
 
@@ -40,7 +39,6 @@
     margin-left: 162px;
     margin-bottom: 73px;
   }
-
 }
 
 .programs-card__description {
@@ -153,7 +151,7 @@
   text-transform: uppercase;
 
 
-  &:hover .product-card__arrow::after {
+  &:hover .programs-card__arrow::after {
     transform: translate(8px);
   }
 
@@ -168,7 +166,7 @@
 }
 
 
-.product-card__arrow {
+.programs-card__arrow {
   overflow: hidden;
   position: relative;
   width: 32px;
@@ -189,5 +187,4 @@
   @media (min-width: 768px) {
     margin-left: 25px;
   }
-
 }
