@@ -1,5 +1,21 @@
-.footer {
+.footer__container {
   padding-top: 40px;
+
+  @media (min-width: 768px) {
+    display: flex;
+    align-items: center;
+    padding-top: 55px;
+    padding-bottom: 55px;
+    justify-content: space-between;
+  }
+
+  @media (min-width: 1300px) {
+    display: flex;
+    align-items: center;
+    padding-top: 67px;
+    padding-bottom: 67px;
+    justify-content: space-between;
+  }
 }
 
 .footer__logo {
@@ -16,34 +32,23 @@
   &:active {
     opacity: 0.6;
   }
-}
-
-.footer__social-wrapper::after {
-  content: "";
-  width: 280px;
-  height: 1px;
-  background-color: #d9d9d9;
-  display: block;
-  margin-top: 20px;
-  margin-bottom: 20px;
-
 
   @media (min-width: 768px) {
-    display: none;
+    padding: 0;
+    margin: 0;
   }
 }
 
-.footer__social-wrapper::before {
-  content: "";
-  width: 280px;
-  height: 1px;
-  background-color: #d9d9d9;
-  display: block;
+.footer__social-wrapper {
+  border-top: 1px solid #d9d9d9;
+  border-bottom: 1px solid #d9d9d9;
+  padding: 20px;
   margin-bottom: 20px;
 
-
   @media (min-width: 768px) {
-    display: none;
+    border: none;
+    padding: 0;
+    margin: 0;
   }
 }
 
@@ -80,6 +85,10 @@
     height: 34px;
     mask-image: url("../../icons/stack.svg#logo-html");
     background-color: #666666;
+
+    @media (min-width: 768px) {
+      margin-left: 23px;
+    }
   }
 
   &:hover::after,
@@ -91,6 +100,11 @@
   &:active::after {
     background-color: $accent-color;
     opacity: 0.5;
+  }
+
+  @media (min-width: 768px) {
+    padding: 0;
+    margin: 0;
   }
 }
 

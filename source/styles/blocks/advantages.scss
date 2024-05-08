@@ -41,12 +41,14 @@
 }
 
 .advantages__item {
-  position: relative;
-  padding-left: 80px;
+  display: flex;
+  gap: 20px;
 
   @media (min-width: 768px) {
+    flex-direction: column;
     min-height: 280px;
-    padding: 151px 26px 26px 0;
+    gap: 31px;
+    padding: 40px 0;
   }
 }
 

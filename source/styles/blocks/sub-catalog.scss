@@ -22,10 +22,25 @@
   background-repeat: no-repeat;
   background-size: cover;
   min-height: 290px;
+  padding: 58px 58px 43px;
 }
 
 .sub-catalog__bonus-description {
   font-size: 16px;
   line-height: 20px;
   color: $contrast-color-text;
+  margin: 0;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  &::before {
+    content: "";
+    width: 78px;
+    height: 80px;
+    background-image: url("../../icons/stack.svg#sub-catalog__bonus");
+    display: block;
+    margin-bottom: 48px;
+  }
 }
