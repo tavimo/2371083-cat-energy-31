@@ -7,3 +7,49 @@
     font-display: swap;
   }
 }
+
+
+/* Декоративный элемент с фоном и изобращением перед пунктами списка advantages */
+@mixin advantages__item ($advantages-background-url) {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 60px;
+  background-color: $accent-color;
+  background-repeat: no-repeat;
+  background-image: $advantages-background-url;
+  background-position: 50%;
+  background-size: 28px;
+  flex-shrink: 0;
+
+
+  @media (min-width: 768px) {
+    width: 80px;
+    height: 80px;
+  }
+}
+
+/* Иконки соц.сетей и их состояния */
+@mixin social-list__link ($mask-image-url) {
+  &::before {
+    content: "";
+    display: block;
+    padding: 2px auto;
+    width: 28px;
+    height: 22px;
+    background-color: #666666;
+    mask-image: $mask-image-url;
+  }
+
+  &:hover::before,
+  &:focus::before {
+    background-color: $accent-color;
+  }
+
+
+  &:active::before {
+    background-color: $accent-color;
+    opacity: 0.5;
+  }
+}
+

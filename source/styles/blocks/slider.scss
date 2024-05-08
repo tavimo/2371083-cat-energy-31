@@ -34,26 +34,73 @@
   height: 40px;
 }
 
-.slider__change-wrapper::before {
-  position: absolute;
-  content: "";
-  top: 50%;
-  left: 50%;
-  z-index: -1;
-  transform: translate(-50%, -50%);
-  width: 4px;
-  height: 256px;
-  background-color: #666666;
-  border-radius: 2px;
 
-  @media (min-width: 768px) {
-    height: 512px;
-  }
-}
+
+/* ползунок */
 
 .slider__change {
   width: 40px;
   height: 40px;
   border-radius: 50%;
   border: 2px solid #666666;
+
+
+  &:hover,
+  &:focus {
+    border: 2px solid $accent-color;
+  }
+
+  &:active {
+    border: 2px solid #9ecc82;
+  }
+
+  &::before {
+    content: "";
+    display: block;
+    width: 24px;
+    height: 18px;
+    mask-image: url("../../icons/stack.svg#example-arrow");
+    background-color: #666666;
+  }
+
+  &:hover::before,
+  &:focus::before {
+    background-color: $accent-color;
+  }
+
+
+  &:active::before {
+    background-color: $accent-color;
+    opacity: 0.5;
+  }
+
+  /* линия ползунка */
+  &::after {
+    position: absolute;
+    content: "";
+    top: 50%;
+    left: 50%;
+    z-index: -1;
+    transform: translate(-50%, -50%);
+    width: 4px;
+    height: 256px;
+    background-color: #666666;
+    border-radius: 2px;
+  }
+
+  &:hover::after,
+  &:focus::after {
+    background-color: $accent-color;
+  }
+
+  &:active::after {
+    background-color: #9ecc82;
+  }
+
+  @media (min-width: 768px) {
+    &::after {
+      height: 512px;
+    }
+  }
+
 }

@@ -292,14 +292,20 @@
     </section>
 
     <section class="map">
-      <div class="map__container container">
+      <div class="container">
         <div class="map__description-container">
-          <h2 class="visually-hidden">Местонахождение на карте</h2>
+          <h2 class="visually-hidden">Контакты</h2>
           <p class="map__description">Приглашаем к сотрудничеству дилеров!</p>
-          <address class="map__address">ул. Большая Конюшенная, д. 19/8</address><span>Санкт-Петербург</span>
+          <address class="map__address">ул. Большая Конюшенная, д. 19/8</address><span class="map__address">Санкт-Петербург</span>
         </div>
-        <div class="map__location">
-        </div>
+      </div>
+      <div class="map__location">
+        <picture>
+          <source media="(min-width: 1300px)" width="1440" height="400" type="image/png" srcset="images/map-desktop@1x.png 1x, images/map-desktop@2x.png 2x">
+          <source media="(min-width: 768px)" width="768" height="400" type="image/png" srcset="images/map-tablet@1x.png 1x, images/map-tablet@2x.png 2x">
+          <img class="map__location-img" src="images/map-mobile@1x.png" srcset="images/map-mobile@2x.png 2x" width="320" height="362" alt="Местонахождение на карте">
+        </picture>
+        <iframe class="map__location-iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6094560304048!2d30.323465821758433!3d59.93862242360575!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1714467114008!5m2!1sru!2sru" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
       </div>
     </section>
 
@@ -308,23 +314,31 @@
   <footer class="footer">
     <div class="container">
       <a class="footer__logo" href="#" aria-current="page">
-        <img src="images/logo-text.svg" width="101" height="18" alt="текстовый логотип Cat Energy">
+
+        <img src="images/logo-text.svg" width="128" height="24" alt="текстовый логотип Cat Energy">
+
       </a>
       <div class="footer__social-wrapper">
         <h2 class="visually-hidden">Социальные сети</h2>
         <ul class="footer__social-list social-list">
           <li class="social-list__item">
-            <a class="social-list__link" href="https://vk.com/htmlacademy" target="_blank" rel="noreferrer noopener">
+
+            <a class="social-list__link social-list__link--vk" href="https://vk.com/htmlacademy" target="_blank" rel="noreferrer noopener">
+
               <span class="visually-hidden">Мы во Вконтакте.</span>
             </a>
           </li>
           <li class="social-list__item">
-            <a class="social-list__link" href="https://www.youtube.com/user/htmlacademyru" target="_blank" rel="noreferrer noopener">
+
+            <a class="social-list__link social-list__link--youtube" href="https://www.youtube.com/user/htmlacademyru" target="_blank" rel="noreferrer noopener">
+
               <span class="visually-hidden">Мы на Youtube.</span>
             </a>
           </li>
           <li class="social-list__item">
-            <a class="social-list__link" href="tg://resolve?domain=htmlacademy" target="_blank" rel="noreferrer noopener">
+
+            <a class="social-list__link social-list__link--telegram" href="tg://resolve?domain=htmlacademy" target="_blank" rel="noreferrer noopener">
+
               <span class="visually-hidden">Мы в Telegram.</span>
             </a>
           </li>
@@ -333,7 +347,7 @@
 
       <a class="footer__copyright-link" href="https://htmlacademy.ru" target="_blank" rel="noreferrer noopener">
         <span class="footer__copyright-name">HTML Academy:</span>
-        <img src="images/logo-html.svg" width="27" height="34" alt="логотип HTML Academy">
+
       </a>
     </div>
   </footer>
