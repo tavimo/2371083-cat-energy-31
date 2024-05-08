@@ -1,6 +1,8 @@
 .example {
   background-color: $color-background;
+
   min-width: 280px;
+
 }
 
 .example__title {
@@ -9,7 +11,9 @@
   line-height: 40px;
   font-weight: 400;
   color: $title-color-text;
+
   margin: 0;
+
 }
 
 
@@ -49,6 +53,7 @@
   position: absolute;
   bottom: -14px;
   left: 18px;
+
   background-color: $color-background;
 
 

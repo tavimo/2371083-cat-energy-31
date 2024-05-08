@@ -8,6 +8,7 @@
   }
 }
 
+
 /* Декоративный элемент с фоном и изобращением перед пунктами списка advantages */
 @mixin advantages__item ($advantages-background-url) {
   content: "";
@@ -51,3 +52,4 @@
     opacity: 0.5;
   }
 }
+
