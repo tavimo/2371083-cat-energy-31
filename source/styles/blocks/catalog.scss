@@ -1,4 +1,6 @@
-
+.catalog__container {
+  padding: 0;
+}
 
 .catalog__title {
   font-family: $title-font;
@@ -6,6 +8,10 @@
   line-height: 36px;
   font-weight: 400;
   color: $title-color-text;
+  display: block;
+  margin: 0;
+  margin-bottom: 41px;
+  padding: 0 20px;
 }
 
 .catalog__list {

@@ -1,6 +1,8 @@
 .example {
   background-color: $color-background;
   min-width: 280px;
+  padding-top: 25px;
+  padding-bottom: 40px;
 }
 
 .example__title {
@@ -10,6 +12,12 @@
   font-weight: 400;
   color: $title-color-text;
   margin: 0;
+  margin-bottom: 40px;
+}
+
+.example__description {
+  margin: 0;
+  margin-bottom: 20px;
 }
 
 .example__list {
@@ -19,6 +27,7 @@
   width: 280px;
   display: flex;
   justify-content: space-between;
+  margin-bottom: 20px;
 
   @media (min-width: 768px) {
     width: 366px;
@@ -77,4 +86,7 @@
   line-height: 20px;
   color: $title-color-text;
   text-transform: uppercase;
+  margin: 0;
+  margin-bottom: 20px;
 }
+
