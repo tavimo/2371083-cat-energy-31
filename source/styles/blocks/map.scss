@@ -1,6 +1,7 @@
 .map {
   min-width: 280px;
   position: relative;
+  background-color: $color-background;
 }
 
 .map__description-container {
@@ -13,9 +14,9 @@
   }
 
   @media (min-width: 1300px) {
-    width:565px;
+    width: 565px;
     min-height: 199px;
-    padding:  60px 78px 60px 80px;
+    padding: 60px 78px 60px 80px;
     position: absolute;
     z-index: 2;
     background-color: #ffffff;
@@ -39,6 +40,7 @@
     line-height: 26px;
     width: 173px;
   }
+
   @media (min-width: 1300px) {
     width: 163px;
   }
