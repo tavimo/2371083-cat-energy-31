@@ -38,7 +38,7 @@
   color: $contrast-color-text;
   display: block;
   margin: 0 auto;
-  width: 270px;
+  max-width: 575px;
   text-align: center;
   margin-bottom: 25px;
 
@@ -61,6 +61,7 @@
   margin: 0 auto;
   text-align: center;
   margin-bottom: 29px;
+  max-width: 550px;
 
   @media (min-width: 768px) {
     font-size: 20px;
