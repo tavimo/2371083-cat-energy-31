@@ -1,8 +1,10 @@
 .slider {
-  max-width: 280px;
+  width: 280px;
+  height: 256px;
 
   @media (min-width: 768px) {
-    max-width: 560px;
+    width: 560px;
+    height: 512px;
   }
 }
 
