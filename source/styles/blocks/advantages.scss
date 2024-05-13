@@ -28,6 +28,8 @@
   flex-direction: column;
   gap: 20px;
 
+  counter-reset: advantages;
+
   @media (min-width: 768px) {
     display: grid;
     grid-template-columns: repeat(2, 250px);
@@ -46,6 +48,7 @@
 .advantages__item {
   display: flex;
   gap: 20px;
+  position: relative;
 
   @media (min-width: 768px) {
     flex-direction: column;
@@ -54,7 +57,6 @@
     padding: 40px 0;
   }
 }
-
 
 .advantages__item--leaf::before {
   @include advantages__item (url("../../icons/stack.svg#advantages__item--leaf"));
@@ -74,4 +76,19 @@
 
 .advantages__description {
   margin: 0;
+}
+
+.advantages__item::after {
+  @media (min-width: 768px) {
+    counter-increment: advantages;
+    content: counters(advantages,".") " ";
+    font-family: $title-font;
+    font-size: 280px;
+    line-height: 280px;
+    color: $color-background;
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    right: 0;
+  }
 }
