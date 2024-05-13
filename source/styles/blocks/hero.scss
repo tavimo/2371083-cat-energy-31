@@ -21,6 +21,12 @@
   }
 }
 
+.hero div.container {
+  @media (min-width: 1300px) {
+    padding-right: 0;
+  }
+}
+
 .hero__cat-background-desktop {
   @media (min-width: 1300px) {
     position: absolute;
@@ -31,7 +37,7 @@
     background-repeat: no-repeat;
     background-size: cover;
     top: 0;
-    left: 50%;
+    left: 610px;
   }
 }
 
