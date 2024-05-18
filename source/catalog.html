@@ -17,31 +17,29 @@
 <body class="page__body">
   <header class="main-header">
     <div class="main-header__container container">
-      <a class="main-header__logo" href="index.html" aria-current="page">
+      <a class="main-header__logo-link" href="index.html">
         <picture>
           <source media="(min-width: 1300px)" width="70" height="59" type="image/svg+xml" srcset="images/logo-desktop.svg">
           <source media="(min-width: 768px)" width="60" height="50" type="image/svg+xml" srcset="images/logo-tablet.svg">
-          <img src="images/logo-mobile.svg" width="33" height="38" alt="логотип Cat Energy">
+          <img class="main-header__logo main-header__logo--img" src="images/logo-mobile.svg" width="33" height="38" alt="логотип Cat Energy">
         </picture>
       </a>
-      <a class="main-header__logo" href="#" aria-current="page">
-        <img src="images/logo-text.svg" width="101" height="18" alt="текстовый логотип Cat Energy">
+      <a class="main-header__logo-link main-header__logo-link--text" href="index.html">
+        <img class="main-header__logo main-header__logo--text" src="images/logo-text.svg" width="101" height="18" alt="текстовый логотип Cat Energy">
       </a>
-      <nav class="main-header__navigation navigation">
-        <button class="navigation__toggle" type="button"><span class="visually-hidden">Открыть меню навигации</span></button>
-        <div class="navigation__container">
-          <ul class="navigation__list">
-            <li class="navigation__item">
-              <a class="navigation__link" href="index.html">Главная</a>
-            </li>
-            <li class="navigation__item">
-              <a class="navigation__link" href="#">Каталог продукции</a>
-            </li>
-            <li class="navigation__item">
-              <a class="navigation__link" href="#">Подбор программы</a>
-            </li>
-          </ul>
-        </div>
+      <nav class="main-header__navigation main-header__navigation--closed main-header__navigation--nojs">
+        <button class="main-header__toggle" type="button"><span class="visually-hidden">Открыть меню навигации</span></button>
+        <ul class="main-header__list">
+          <li class="main-header__item">
+            <a class="main-header__link" href="index.html">Главная</a>
+          </li>
+          <li class="main-header__item">
+            <a class="main-header__link" href="#">Каталог продукции</a>
+          </li>
+          <li class="main-header__item">
+            <a class="main-header__link" href="#">Подбор программы</a>
+          </li>
+        </ul>
       </nav>
     </div>
   </header>
@@ -278,7 +276,7 @@
             </p>
           </div>
         </div>
-        </div>
+      </div>
     </section>
 
     <section class="promotions">
