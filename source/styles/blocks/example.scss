@@ -105,19 +105,20 @@
   line-height: 12px;
   text-transform: lowercase;
   display: block;
-  width: 87px;
+  width: fit-content;
+  transform: translateX(-50%);
   padding: 0 14px;
   position: absolute;
   bottom: -14px;
-  left: 18px;
+  left: 50%;
+  margin: 0 auto;
   background-color: $color-background;
 
   @media (min-width: 768px) {
     font-size: 14px;
     line-height: 14px;
-    width: 142px;
+    width: max-content;
     bottom: -5px;
-    left: 10px;
     padding: 0 8px;
     background-color: #ffffff;
   }
