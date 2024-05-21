@@ -1,46 +1,3 @@
-.promotions {
-  position: relative;
-
-  &::before {
-    content: "";
-    display: block;
-    width: 100%;
-    height: 2px;
-    background-color: $accent-color;
-    position: absolute;
-    top: 52px;
-    left: 20%;
-    z-index: 1;
-  }
-
-  @media (min-width: 768px) {
-    &::before {
-      content: "";
-      display: block;
-      width: 100%;
-      height: 2px;
-      background-color: $accent-color;
-      position: absolute;
-      top: 96px;
-      left: 0;
-      z-index: 1;
-    }
-  }
-
-  @media (min-width: 1300px) {
-    &::before {
-      content: "";
-      display: block;
-      width: 100%;
-      height: 2px;
-      background-color: $accent-color;
-      position: absolute;
-      top: 116px;
-      z-index: 1;
-    }
-  }
-}
-
 .promotions__container {
   padding: 40px 20px;
 
@@ -59,18 +16,38 @@
   line-height: 24px;
   color: $title-color-text;
   margin: 0;
-  padding-right: 40px;
   margin-bottom: 32px;
   display: inline-block;
   background-color: #ffffff;
   position: relative;
-  z-index: 2;
+  width: fit-content;
+  box-shadow: -40px 0 0 0 #ffffff, 40px 0 0 0 #ffffff;
+
+  &::before {
+    content: "";
+    display: block;
+    width: 100vw;
+    height: 2px;
+    right: 0;
+    top: 12px;
+    background-color: $accent-color;
+    position: absolute;
+    z-index: -1;
+    box-shadow: 100vw 0 0 0 $accent-color;
+
+    @media (min-width: 768px) {
+      top: 16px;
+    }
+
+    @media (min-width: 1300px) {
+      top: 20px;
+    }
+  }
 
   @media (min-width: 768px) {
     font-size: 32px;
     line-height: 32px;
     margin-bottom: 66px;
-    padding: 0 40px;
   }
 
   @media (min-width: 1300px) {

@@ -11,6 +11,11 @@
   padding: 10px 0;
   background-color: $accent-color;
   text-align: center;
+
+  @media (min-width: 768px) {
+    font-size: 20px;
+    line-height: 26px;
+  }
 }
 
 .button--light {

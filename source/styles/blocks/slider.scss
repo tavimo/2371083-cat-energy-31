@@ -44,7 +44,12 @@
 }
 
 .slider__img-after {
+  display: block;
   transform: translate(-50%);
+}
+
+.slider__img-before {
+  display: block;
 }
 
 .slider__change-wrapper {

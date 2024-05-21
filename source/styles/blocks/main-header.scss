@@ -5,10 +5,19 @@
 
   @media (min-width: 1300px) {
     margin-top: 55px;
-    position: absolute;
-    transform: translate(-50%);
-    top: 0;
-    left: 50%;
+    margin-bottom: 74px;
+  }
+
+  &--index-desktop {
+    @media (min-width: 1300px) {
+      margin-top: 55px;
+      margin-bottom: 0;
+      position: absolute;
+      transform: translate(-50%);
+      top: 0;
+      left: 50%;
+      z-index: 2;
+    }
   }
 }
 
@@ -47,6 +56,13 @@
       padding: 16px 13px;
       margin-right: auto;
     }
+  }
+}
+
+.main-header__logo--text {
+  @media (min-width: 1300px) {
+    width: 118px;
+    height: 21px;
   }
 }
 
@@ -100,8 +116,34 @@
   }
 }
 
+.main-header__list {
+  @media (min-width: 768px) {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    font-family: $title-font;
+    font-size: 18px;
+    line-height: 24px;
+    text-transform: uppercase;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: end;
+    position: static;
+    max-width: 800px;
+    background-color: transparent;
+  }
+
+  @media (min-width: 1300px) {
+    font-size: 20px;
+    line-height: 30px;
+  }
+}
+
 .main-header__navigation--closed .main-header__list {
-  display: none;
+  @media (max-width: 767px) {
+    display: none;
+  }
 }
 
 .main-header__navigation--opened .main-header__list {
@@ -139,6 +181,36 @@
   }
 }
 
+.main-header__item--current {
+  &::after {
+    @media (min-width: 768px) {
+      content: "";
+      margin: 0 auto;
+      width: calc(100% - 32px);
+      height: 2px;
+      background-color: $accent-color;
+      display: block;
+    }
+
+    @media (min-width: 1300px) {
+      background-color: #000000;
+    }
+  }
+}
+
+.main-header--index-desktop li.main-header__item--current {
+  @media (min-width: 1300px) {
+    &::after {
+      content: "";
+      margin: 0 auto;
+      width: calc(100% - 32px);
+      height: 1px;
+      background-color: #ffffff;
+      display: block;
+    }
+  }
+}
+
 .main-header__link {
   text-decoration: none;
   color: $title-color-text;
@@ -147,9 +219,15 @@
   margin: 0 auto;
 
   @media (min-width: 768px) {
-    padding: 14px 16px 12px;
+    padding: 14px 17px 8px;
   }
 
+  @media (min-width: 1300px) {
+    padding: 19px 16px 8px;
+  }
+}
+
+.main-header--index-desktop a.main-header__link {
   @media (min-width: 1300px) {
     color: $contrast-color-text;
   }
@@ -157,6 +235,10 @@
 
 .main-header__item:last-child .main-header__link {
   @media (min-width: 768px) {
+    padding-right: 7px;
+  }
+
+  @media (min-width: 1300px) {
     padding-right: 0;
   }
 }

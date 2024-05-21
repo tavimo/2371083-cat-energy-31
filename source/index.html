@@ -15,7 +15,7 @@
 </head>
 
 <body class="page__body">
-  <header class="main-header">
+  <header class="main-header main-header--index-desktop">
     <div class="main-header__container container">
       <a class="main-header__logo-link" href="#" aria-current="page">
         <picture>
@@ -30,7 +30,7 @@
       <nav class="main-header__navigation main-header__navigation--closed main-header__navigation--nojs">
         <button class="main-header__toggle" type="button"><span class="visually-hidden">Открыть меню навигации</span></button>
         <ul class="main-header__list">
-          <li class="main-header__item">
+          <li class="main-header__item main-header__item--current">
             <a class="main-header__link" href="#">Главная</a>
           </li>
           <li class="main-header__item">
@@ -154,7 +154,7 @@
             <div class="slider__img slider__img--before">
               <picture>
                 <source media="(min-width: 768px)" width="560" height="512" type="image/png" srcset="images/slider-before-tablet@1x.png 1x, images/slider-before-tablet@2x.png 2x">
-                <img src="images/slider-before-mobile@1x.png" srcset="images/slider-before-mobile@2x.png 2x" width="280" height="256" alt="толстый кот до употребления корма Cat Energy Slim">
+                <img class="slider__img-before" src="images/slider-before-mobile@1x.png" srcset="images/slider-before-mobile@2x.png 2x" width="280" height="256" alt="толстый кот до употребления корма Cat Energy Slim">
               </picture>
             </div>
             <div class="slider__img slider__img--after">
@@ -173,7 +173,7 @@
       <div class="container">
         <div class="map__description-container">
           <h2 class="visually-hidden">Контакты</h2>
-          <p class="map__description">Приглашаем к сотрудничеству дилеров!</p>
+          <p class="map__description">Приглашаем <br> к сотрудничеству дилеров!</p>
           <address class="map__address">ул. Большая Конюшенная, д. 19/8<span class="map__address">Санкт-Петербург</span></address>
         </div>
       </div>

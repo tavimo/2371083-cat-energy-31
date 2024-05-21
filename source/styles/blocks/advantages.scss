@@ -1,6 +1,10 @@
 
 .advantages {
   margin-bottom: 49px;
+
+  @media (min-width: 1300px) {
+    margin-bottom: 71px;
+  }
 }
 
 .advantages__title {
@@ -9,12 +13,13 @@
   line-height: 40px;
   font-weight: 400;
   color: $title-color-text;
-
   margin: 0;
   margin-bottom: 40px;
 
 
   @media (min-width: 768px) {
+    font-size: 60px;
+    line-height: 60px;
     margin-bottom: 32px;
   }
 }
@@ -40,7 +45,7 @@
   @media (min-width: 1300px) {
     display: grid;
     grid-template-columns: repeat(4, 250px);
-    gap: 73px;
+    gap: 74px;
     padding-right: 0;
   }
 }
@@ -76,12 +81,17 @@
 
 .advantages__description {
   margin: 0;
+
+  @media (min-width: 768px) {
+    font-size: 16px;
+    line-height: 24px;
+  }
 }
 
 .advantages__item::after {
   @media (min-width: 768px) {
     counter-increment: advantages;
-    content: counters(advantages,".") " ";
+    content: counters(advantages, ".") " ";
     font-family: $title-font;
     font-size: 280px;
     line-height: 280px;

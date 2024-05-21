@@ -1,16 +1,20 @@
 .map {
   min-width: 280px;
   position: relative;
-  background-color: $color-background;
+
+  @media (min-width: 1300px) {
+    background-color: #ffffff;
+  }
 }
 
 .map__description-container {
   padding: 26px 0;
   display: flex;
   justify-content: space-between;
+  min-width: 280px;
 
   @media (min-width: 768px) {
-    padding: 60px 40px;
+    padding: 62px 40px;
   }
 
   @media (min-width: 1300px) {
@@ -33,7 +37,7 @@
   margin: 0;
   padding: 0;
   width: 140px;
-  padding-right: 10px;
+  /* padding-right: 10px; */
 
   @media (min-width: 768px) {
     font-size: 20px;
@@ -60,6 +64,10 @@
     width: 157px;
     text-align: right;
     justify-content: space-between;
+  }
+
+  @media (min-width: 1300px) {
+    text-align: left;
   }
 }
 
