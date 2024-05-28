@@ -32,7 +32,8 @@
   background-color: $color-background;
   color: $basic-color-text;
 
-  &:hover, &:active {
+  &:hover,
+  &:active {
     color: $basic-color-text;
     background-color: #ebebeb;
   }
