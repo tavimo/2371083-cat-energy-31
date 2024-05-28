@@ -1,9 +1,60 @@
+.promotions__container {
+  padding: 40px 20px;
+
+  @media (min-width: 768px) {
+    padding: 80px 68px;
+  }
+
+  @media (min-width: 1300px) {
+    padding: 96px 40px 104px;
+  }
+}
 
 .promotions__title {
   font-family: $title-font;
   font-size: 24px;
   line-height: 24px;
   color: $title-color-text;
+  margin: 0;
+  margin-bottom: 32px;
+  display: inline-block;
+  background-color: #ffffff;
+  position: relative;
+  width: fit-content;
+  box-shadow: -40px 0 0 0 #ffffff, 40px 0 0 0 #ffffff;
+
+  &::before {
+    content: "";
+    display: block;
+    width: 100vw;
+    height: 2px;
+    right: 0;
+    top: 12px;
+    background-color: $accent-color;
+    position: absolute;
+    z-index: -1;
+    box-shadow: 100vw 0 0 0 $accent-color;
+
+    @media (min-width: 768px) {
+      top: 16px;
+    }
+
+    @media (min-width: 1300px) {
+      top: 20px;
+    }
+  }
+
+  @media (min-width: 768px) {
+    font-size: 32px;
+    line-height: 32px;
+    margin-bottom: 66px;
+  }
+
+  @media (min-width: 1300px) {
+    font-size: 40px;
+    line-height: 40px;
+    margin-bottom: 72px;
+  }
 }
 
 .promotions__description {
@@ -11,6 +62,21 @@
   font-size: 16px;
   line-height: 24px;
   color: $title-color-text;
+  margin: 0;
+  margin-bottom: 24px;
+  text-align: center;
+
+  @media (min-width: 768px) {
+    width: 632px;
+    font-size: 24px;
+    line-height: 32px;
+    margin: 0 auto;
+    margin-bottom: 24px;
+  }
+
+  @media (min-width: 1300px) {
+    width: 750px;
+  }
 }
 
 
@@ -19,4 +85,57 @@
   font-size: 20px;
   line-height: auto;
   color: $basic-color-text;
+  text-transform: uppercase;
+}
+
+.promotions__input {
+  width: 100%;
+  padding: 13px;
+  border: 1px solid #e7e7e7;
+  margin-bottom: 16px;
+  height: 56px;
+
+  @media (min-width: 768px) {
+    margin-bottom: 0;
+    min-width: 376px;
+  }
+
+  @media (min-width: 1300px) {
+    min-width: 496px;
+  }
+
+  &:hover {
+    border: 1px solid #cdcdcd;
+  }
+
+  &:active {
+    border: 2px solid #444444;
+    border-radius: 0;
+  }
+
+  &:invalid {
+    border: 2px solid #ff8282;
+  }
+}
+
+.promotions__form {
+  @media (min-width: 768px) {
+    display: flex;
+    justify-content: center;
+  }
+
+  @media (min-width: 1300px) {
+    width: 752px;
+    margin: 0 auto;
+  }
+}
+
+.promotions__button {
+  font-size: 20px;
+  line-height: 26px;
+  height: 56px;
+
+  @media (min-width: 768px) {
+    padding: 15px auto;
+  }
 }

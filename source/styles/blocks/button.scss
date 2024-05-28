@@ -11,9 +11,30 @@
   padding: 10px 0;
   background-color: $accent-color;
   text-align: center;
+  cursor: pointer;
+
+  @media (min-width: 768px) {
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  &:hover {
+    background-color: $accent-color-2;
+  }
+
+  &:active {
+    background-color: $accent-color-2;
+    color: rgba(255, 255, 255, 0.3);
+  }
 }
 
 .button--light {
   background-color: $color-background;
   color: $basic-color-text;
+
+  &:hover,
+  &:active {
+    color: $basic-color-text;
+    background-color: #ebebeb;
+  }
 }
