@@ -1,17 +1,19 @@
 .sub-card {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  padding: 13px 0 19px;
+  padding: 12px 0 18px;
 
   @media (min-width: 768px) {
-    padding: 26px 40px 28px 38px;
-    grid-template-columns: 1fr 150px 91px;
+    padding: 26px 38px 27px;
+    grid-template-columns: 1fr 150px 66px;
     gap: 25px;
   }
 
   @media (min-width: 1300px) {
-    grid-template-columns: 1fr 244px 82px 244px;
-    padding: 15px 0 17px;
+    grid-template-columns: 1fr 165px 82px 244px;
+    padding: 15px 0 16px;
+    align-items: center;
+    gap: 40px;
   }
 }
 
@@ -58,15 +60,12 @@
 .sub-card__product-price {
   margin: 0;
   padding: 0;
-  margin-bottom: 15px;
   text-align: end;
 
   @media (min-width: 768px) {
     grid-column: 3/ 1 span;
     font-size: 16px;
     line-height: 20px;
-    margin-bottom: 0;
-    text-align: start;
   }
 }
 

@@ -2,12 +2,12 @@
   min-width: 280px;
   padding: 20px 20px 25px;
   display: grid;
-  /* grid-template-columns: repeat(2, 1fr); */
   grid-template-columns: 140px 1fr;
 
 
   @media (min-width: 768px) {
     min-width: 324px;
+    min-height: 430px;
     grid-template-columns: 250px;
     padding: 0 37px 40px;
     background-color: $color-background;
@@ -18,7 +18,7 @@
     min-width: 245px;
     grid-template-columns: 169px;
     padding: 0 38px 40px;
-    grid-template-rows: 161px 1fr;
+    grid-template-rows: 151px 1fr;
   }
 }
 
@@ -35,7 +35,7 @@
     width: 200px;
     height: 210px;
     margin: 0 auto;
-    margin-top: -81px;
+    margin-top: -70px;
   }
 
   @media (min-width: 768px) {
@@ -56,7 +56,7 @@
   grid-column: 1 / -1;
 
   @media (min-width: 768px) {
-    margin-top: 32px;
+    margin-top: 33px;
   }
 }
 
@@ -111,11 +111,24 @@
   }
 }
 
+.product-card__definition:nth-child(2) {
+  @media (min-width: 768px) {
+    padding-top: 0;
+  }
+}
+
+
 .product-card__term {
   @media (min-width: 768px) {
     border-bottom: 1px solid #cdcdcd;
     padding-top: 5px;
     padding-bottom: 5px;
+  }
+}
+
+.product-card__term:first-child {
+  @media (min-width: 768px) {
+    padding-top: 0;
   }
 }
 
@@ -152,7 +165,7 @@
     grid-template-columns: 250px;
     padding: 0 37px 40px;
     background-color: #ffffff;
-    grid-template-rows: 161px 1fr;
+    grid-template-rows: 161px auto 1fr;
     border: 2px solid $color-background;
 
     &::before {
@@ -172,7 +185,7 @@
     min-width: 245px;
     grid-template-columns: 169px;
     padding: 0 38px 40px;
-    grid-template-rows: 161px 1fr;
+    grid-template-rows: 151px auto 1fr;
   }
 }
 
@@ -183,16 +196,23 @@
 
   @media (min-width: 768px) {
     width: 170px;
+    margin-bottom: 23px;
   }
 }
 
 .product-card--show-all p {
+  font-size: 12px;
+  line-height: 16px;
   margin: 0 auto;
-  margin-bottom: 21px;
   text-align: center;
 
   @media (min-width: 768px) {
-    margin-bottom: 23px;
+    font-size: 16px;
+    line-height: 18px;
     width: 170px;
   }
+}
+
+.product-card--show-all .product-card__button {
+  margin-top: 21px;
 }

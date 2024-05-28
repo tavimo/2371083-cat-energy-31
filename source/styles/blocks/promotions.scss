@@ -91,11 +91,30 @@
 .promotions__input {
   width: 100%;
   padding: 13px;
-  border: 1px solid #cdcdcd;
+  border: 1px solid #e7e7e7;
   margin-bottom: 16px;
+  height: 56px;
 
   @media (min-width: 768px) {
     margin-bottom: 0;
+    min-width: 376px;
+  }
+
+  @media (min-width: 1300px) {
+    min-width: 496px;
+  }
+
+  &:hover {
+    border: 1px solid #cdcdcd;
+  }
+
+  &:active {
+    border: 2px solid #444444;
+    border-radius: 0;
+  }
+
+  &:invalid {
+    border: 2px solid #ff8282;
   }
 }
 
@@ -108,5 +127,15 @@
   @media (min-width: 1300px) {
     width: 752px;
     margin: 0 auto;
+  }
+}
+
+.promotions__button {
+  font-size: 20px;
+  line-height: 26px;
+  height: 56px;
+
+  @media (min-width: 768px) {
+    padding: 15px auto;
   }
 }
