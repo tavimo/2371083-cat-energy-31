@@ -61,9 +61,13 @@
   list-style-type: none;
   margin: 0 auto;
   display: flex;
-  justify-content: end;
-  min-width: 170px;
+  justify-content: center;
   gap: 24px;
+  min-width: 170px;
+
+  @media (min-width: 768px) {
+    justify-content: end;
+  }
 }
 
 .social-list__link--vk {
