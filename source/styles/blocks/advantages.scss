@@ -1,0 +1,104 @@
+
+.advantages {
+  margin-bottom: 49px;
+
+  @media (min-width: 1300px) {
+    margin-bottom: 71px;
+  }
+}
+
+.advantages__title {
+  font-family: $title-font;
+  font-size: 36px;
+  line-height: 40px;
+  font-weight: 400;
+  color: $title-color-text;
+  margin: 0;
+  margin-bottom: 40px;
+
+
+  @media (min-width: 768px) {
+    font-size: 60px;
+    line-height: 60px;
+    margin-bottom: 32px;
+  }
+}
+
+.advantages__list {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+
+  counter-reset: advantages;
+
+  @media (min-width: 768px) {
+    display: grid;
+    grid-template-columns: repeat(2, 250px);
+    gap: 37px 135px;
+    padding-right: 73px;
+  }
+
+  @media (min-width: 1300px) {
+    display: grid;
+    grid-template-columns: repeat(4, 250px);
+    gap: 74px;
+    padding-right: 0;
+  }
+}
+
+.advantages__item {
+  display: flex;
+  gap: 20px;
+  position: relative;
+
+  @media (min-width: 768px) {
+    flex-direction: column;
+    min-height: 280px;
+    gap: 31px;
+    padding: 40px 0;
+  }
+}
+
+.advantages__item--leaf::before {
+  @include advantages__item (url("../../icons/stack.svg#advantages__item--leaf"));
+}
+
+.advantages__item--water::before {
+  @include advantages__item (url("../../icons/stack.svg#advantages__item--water"));
+}
+
+.advantages__item--food::before {
+  @include advantages__item (url("../../icons/stack.svg#advantages__item--food"));
+}
+
+.advantages__item--watch::before {
+  @include advantages__item (url("../../icons/stack.svg#advantages__item--watch"));
+}
+
+.advantages__description {
+  margin: 0;
+
+  @media (min-width: 768px) {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+
+.advantages__item::after {
+  @media (min-width: 768px) {
+    counter-increment: advantages;
+    content: counters(advantages, ".") " ";
+    font-family: $title-font;
+    font-size: 280px;
+    line-height: 280px;
+    color: $color-background;
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    right: 0;
+  }
+}

@@ -1,0 +1,192 @@
+.programs-card {
+  background-color: $color-background;
+  min-height: 266px;
+  padding: 30px 20px 22px;
+  position: relative;
+
+  @media (min-width: 768px) {
+    padding: 77px 316px 57px 52px;
+  }
+
+  @media (min-width: 1300px) {
+    padding: 77px 61px 59px 52px;
+    width: 570px;
+    min-height: 374px;
+  }
+}
+
+
+.programs-card__title {
+  margin: 0;
+  padding: 0;
+  font-family: $title-font;
+  font-size: 24px;
+  line-height: 37px;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: $title-color-text;
+  margin-left: 70px;
+  margin-bottom: 29px;
+
+  @media (min-width: 768px) {
+    font-size: 36px;
+    line-height: 36px;
+    margin-left: 0;
+    margin-bottom: 24px;
+  }
+
+  @media (min-width: 1300px) {
+    margin-left: 162px;
+    margin-bottom: 73px;
+  }
+}
+
+.programs-card__description {
+  color: $basic-color-text;
+  margin: 0;
+  margin-bottom: 19px;
+  padding-bottom: 22px;
+  border-bottom: 1px solid #d9d9d9;
+
+  @media (min-width: 768px) {
+    font-size: 16px;
+    line-height: 24px;
+    border-bottom: none;
+    padding-bottom: 0;
+    margin-bottom: 56px;
+  }
+
+  @media (min-width: 1300px) {
+    margin-bottom: 28px;
+  }
+}
+
+.programs-card::before {
+  content: "";
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: $accent-color;
+  display: block;
+  margin-right: 20px;
+  position: absolute;
+  top: 24px;
+
+  @media (min-width: 768px) {
+    width: 200px;
+    height: 200px;
+    right: 63px;
+    margin-right: 0;
+    top: 91px;
+  }
+
+  @media (min-width: 1300px) {
+    width: 100px;
+    height: 100px;
+    top: 47px;
+    left: 52px;
+  }
+}
+
+.programs-card--slim::after {
+  content: "";
+  background-image: url("../../icons/stack.svg#programs-cat-slim");
+  background-repeat: no-repeat;
+  width: 36px;
+  height: 50px;
+  display: block;
+  position: absolute;
+  left: 27px;
+  top: 21px;
+
+  @media (min-width: 768px) {
+    width: 140px;
+    height: 194px;
+    left: auto;
+    right: 93px;
+    top: 81px;
+  }
+
+  @media (min-width: 1300px) {
+    width: 70px;
+    height: 97px;
+    top: 41px;
+    left: 67px;
+  }
+}
+
+.programs-card--pro::after {
+  content: "";
+  background-image: url("../../icons/stack.svg#programs-cat-pro");
+  background-repeat: no-repeat;
+  width: 67px;
+  height: 28px;
+  display: block;
+  position: absolute;
+  top: 35px;
+  left: 12px;
+
+  @media (min-width: 768px) {
+    width: 268px;
+    height: 112px;
+    left: auto;
+    top: 135px;
+    right: 29px;
+  }
+
+  @media (min-width: 1300px) {
+    width: 134px;
+    height: 56px;
+    top: 67px;
+    left: 33px;
+  }
+}
+
+.programs-card__link {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  font-family: $title-font;
+  font-size: 16px;
+  line-height: 16px;
+  color: $title-color-text;
+  text-transform: uppercase;
+
+
+  &:hover .programs-card__arrow::after {
+    transform: translate(8px);
+  }
+
+  &:active {
+    opacity: 0.5;
+  }
+
+  @media (min-width: 768px) {
+    font-size: 20px;
+    line-height: 24px;
+  }
+}
+
+
+.programs-card__arrow {
+  overflow: hidden;
+  position: relative;
+  width: 32px;
+  height: 10px;
+  margin-left: 15px;
+
+  &::after {
+    content: "";
+    width: 32px;
+    height: 10px;
+    display: block;
+    background-image: url("../../icons/stack.svg#programs-arrow");
+    position: absolute;
+    left: -8px;
+    transition: transform 0.3s ease;
+  }
+
+  @media (min-width: 768px) {
+    margin-left: 25px;
+  }
+}
