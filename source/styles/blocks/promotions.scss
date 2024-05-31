@@ -94,6 +94,11 @@
   border: 1px solid #e7e7e7;
   margin-bottom: 16px;
   height: 56px;
+  font-family: $title-font;
+  font-size: 20px;
+  line-height: auto;
+  color: $basic-color-text;
+  text-transform: uppercase;
 
   @media (min-width: 768px) {
     margin-bottom: 0;
