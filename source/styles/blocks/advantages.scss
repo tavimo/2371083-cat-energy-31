@@ -102,3 +102,9 @@
     right: 0;
   }
 }
+
+.advantages__item:first-child::after {
+  @media (min-width: 768px) {
+    right: 25px;
+  }
+}

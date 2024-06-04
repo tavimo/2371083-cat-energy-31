@@ -1,6 +1,5 @@
 .programs-card {
   background-color: $color-background;
-  min-height: 266px;
   padding: 30px 20px 22px;
   position: relative;
 
@@ -172,13 +171,13 @@
   overflow: hidden;
   position: relative;
   width: 32px;
-  height: 10px;
+  height: 12px;
   margin-left: 15px;
 
   &::after {
     content: "";
     width: 32px;
-    height: 10px;
+    height: 12px;
     display: block;
     background-image: url("../../icons/stack.svg#programs-arrow");
     position: absolute;
