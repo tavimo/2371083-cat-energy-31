@@ -8,6 +8,14 @@
   }
 }
 
+.slider picture {
+  display: contents;
+}
+
+.slider source {
+  display: contents;
+}
+
 .slider__container {
   display: grid;
   grid-template-columns: 138px 4px 138px;

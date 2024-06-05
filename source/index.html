@@ -19,18 +19,20 @@
 <body class="page__body">
   <header class="main-header main-header--index-desktop">
     <div class="main-header__container container">
-      <a class="main-header__logo-link" href="#" aria-current="page">
-        <picture>
-          <source media="(min-width: 1300px)" width="70" height="59" type="image/svg+xml" srcset="images/logo-desktop.svg">
-          <source media="(min-width: 768px)" width="60" height="50" type="image/svg+xml" srcset="images/logo-tablet.svg">
-          <img class="main-header__logo main-header__logo--img" src="images/logo-mobile.svg" width="33" height="38" alt="логотип Cat Energy">
-        </picture>
-      </a>
-      <a class="main-header__logo-link main-header__logo-link--text" href="#" aria-current="page">
-        <img class="main-header__logo main-header__logo--text" src="images/logo-text.svg" width="101" height="18" alt="текстовый логотип Cat Energy">
-      </a>
+      <div class="main-header__container-control">
+        <a class="main-header__logo-link" href="#" aria-current="page">
+          <picture>
+            <source media="(min-width: 1300px)" width="70" height="59" type="image/svg+xml" srcset="images/logo-desktop.svg">
+            <source media="(min-width: 768px)" width="60" height="50" type="image/svg+xml" srcset="images/logo-tablet.svg">
+            <img class="main-header__logo main-header__logo--img" src="images/logo-mobile.svg" width="33" height="38" alt="логотип Cat Energy">
+          </picture>
+        </a>
+        <a class="main-header__logo-link main-header__logo-link--text" href="#" aria-current="page">
+          <img class="main-header__logo main-header__logo--text" src="images/logo-text.svg" width="101" height="18" alt="текстовый логотип Cat Energy">
+        </a>
+        <button class="main-header__toggle main-header__toggle--closed main-header__toggle--nojs" type="button"><span class="visually-hidden">Открыть меню навигации</span></button>
+      </div>
       <nav class="main-header__navigation main-header__navigation--closed main-header__navigation--nojs">
-        <button class="main-header__toggle" type="button"><span class="visually-hidden">Открыть меню навигации</span></button>
         <ul class="main-header__list">
           <li class="main-header__item main-header__item--current">
             <a class="main-header__link" href="#">Главная</a>

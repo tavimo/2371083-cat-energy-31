@@ -118,6 +118,14 @@
   }
 }
 
+.hero__img-wrapper picture {
+  display: contents;
+}
+
+.hero__img-wrapper source {
+  display: contents;
+}
+
 .hero__button {
   @media (min-width: 768px) {
     font-size: 20px;
